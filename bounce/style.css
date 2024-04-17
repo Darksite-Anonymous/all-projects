@@ -1,0 +1,88 @@
+body{
+    background-color: bisque;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contianer{
+    height: 80vh;
+    width: 90vw;
+    background-color: greenyellow;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    /* animation: Yanimation 5s ease-out infinite, Xanimation 5s linear 1s infinite reverse; */
+    animation: Yanimation 1s ease-out infinite alternate, Xanimation 2s infinite linear;
+
+    
+}
+
+@keyframes Yanimation {
+    from{
+        top: 0px;
+    }
+
+    to{
+        top: -100%;
+    }
+}
+
+@keyframes Xanimation {
+    from{
+        left: 50px;
+    }
+
+    to{
+        left: 100%;
+    }
+}
+
+
+ /* my first animation of bouncing ball not too perfect but good as well in my opinion */
+
+
+
+/* @keyframes Yanimation {
+    0%{
+        top: 0px;
+    }
+
+    25%{
+        top: -200px;
+    }
+
+    50%{
+        top: 0px;
+    }
+
+    75%{
+       top: -200px; 
+    }
+
+    100%{
+        top: 0px;
+    }
+}
+
+@keyframes Xanimation{
+    0%{
+        left: 50px;
+    }
+
+    100%{
+        left: 1200px;
+    }
+} */

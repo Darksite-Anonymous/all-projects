@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container{
+    height: 300px;
+    width: 1000px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* position: absolute; */
+    /* overflow: scroll; */
+    /* overflow: hidden; */
+}
+
+.wrap{
+    height: 50px;
+    width: 500px;
+    border: 1px solid rgb(255, 0, 0);
+    position: relative;
+    /* display: flex; */
+    /* overflow: scroll; */
+}

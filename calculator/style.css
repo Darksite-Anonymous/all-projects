@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    height: 85vh;
+    width: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 10px 10px;
+    /* box-shadow: inset 5px 5px 7px 0px rgb(212, 212, 212),
+                inset -7px -7px 10px 0px rgb(189, 189, 189) */
+                /* inset 2px 2px 10px 0px gray */;
+    box-shadow:  7px 7px 10px 0px rgb(148, 147, 147);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.display{
+    height: 30vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside{
+    height: 80%;
+    width: 90%;
+    background-color: rgba(168, 168, 168, 0.712);
+    border-radius: 10px;
+}
+
+.keys{
+    height: 55vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    justify-content: start;
+}
+
+.number-keys{
+    height: 100%;
+    width: 80%;
+    /* background: green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 0;
+}
+
+.num{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 42);
+    box-shadow: inset 2px 2px 5px 0px rgb(29, 88, 39);
+    color: #FFFFFF;
+    font-size: 1.2em;
+    transition: 50ms;
+}
+
+.num:hover{
+    box-shadow: inset 1px 1px 5px 0px rgb(29, 88, 39);
+    background-color: rgb(0, 216, 36);
+}
+
+.equal{
+    height: 100%;
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-equal, .main-clear{
+    height: 140px;
+    position: relative;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 255, 42);
+    box-shadow: inset 2px 2px 5px 0px rgb(29, 88, 39);
+    color: #FFFFFF;
+    font-size: 1.2em;
+    transition: 50ms;
+}
+
+.main-equal{
+    top: 20px;
+}
+
+.main-equal:hover{
+    box-shadow: inset 1px 1px 5px 0px rgb(29, 88, 39);
+    background-color: rgb(0, 216, 36);   
+}
+
+
+.main-clear:hover{
+    box-shadow: inset 1px 1px 5px 0px rgb(29, 88, 39);
+    background-color: rgb(0, 216, 36);   
+}
+
+.main-clear{
+    top: 2px;
+}

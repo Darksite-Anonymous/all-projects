@@ -1,0 +1,16 @@
+import subprocess
+
+def shutdown_pc(wait_time=0):
+  """Shuts down the PC after the specified wait time in seconds.
+
+  Args:
+      wait_time: The time in seconds to wait before shutting down (default: 0).
+  """
+  subprocess.run(["sudo", "shutdown", "-h", "+{}".format(wait_time)])
+
+# Example usage with immediate shutdown
+shutdown_pc()
+
+# Example usage with a 5-second delay
+shutdown_pc(5)
+
